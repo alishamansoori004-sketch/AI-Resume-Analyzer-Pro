@@ -28,6 +28,6 @@ AI Resume Analyzer Pro is a Flask-based web application that analyzes resumes an
 
 ## Developer
 
-Aqiqa Fatima
+Alisha Mansoori
 
 Built for Digital Heroes
