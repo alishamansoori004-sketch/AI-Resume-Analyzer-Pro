@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analysis Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Resume Analysis Result 🚀</h1>
+
+    <div class="features">
+
+        <div class="card">
+            <div class="icon">📊</div>
+            <h3>ATS Score</h3>
+            <h2>{{ ats_score }}/100</h2>
+        </div>
+
+        <div class="card">
+            <div class="icon">✅</div>
+            <h3>Detected Skills</h3>
+            <p>{{ detected_skills }}</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📈</div>
+            <h3>Recommended Skills</h3>
+            <p>{{ recommended_skills }}</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💼</div>
+            <h3>Career Role</h3>
+            <p>{{ career_role }}</p>
+        </div>
+        <div class="card">
+    <div class="icon">💡</div>
+    <h3>Improvement Suggestions</h3>
+
+    <ul style="text-align:left; margin-top:10px;">
+        <li>Add more projects</li>
+        <li>Include internships</li>
+        <li>Add certifications</li>
+        <li>Improve communication skills</li>
+    </ul>
+</div>
+
+    </div>
+
+    <br><br>
+
+    <a href="/">
+        <button>
+            Analyze Another Resume
+        </button>
+    </a>
+
+</div>
+
+</body>
+</html>

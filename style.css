@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+    color: white;
+    min-height: 100vh;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+    text-align:center;
+}
+
+h1{
+    font-size:55px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.subtitle{
+    color:#cbd5e1;
+    font-size:18px;
+    margin-bottom:40px;
+}
+
+.upload-box{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    border:1px solid rgba(255,255,255,0.1);
+    padding:35px;
+    border-radius:20px;
+    margin-bottom:50px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.3);
+}
+
+input[type="file"]{
+    padding:12px;
+    color:white;
+}
+
+button{
+    padding:14px 28px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.upload-box button{
+    background:#3b82f6;
+    color:white;
+}
+
+.upload-box button:hover{
+    transform:scale(1.05);
+}
+
+.features{
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    border-radius:20px;
+    width:300px;
+    padding:30px;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:12px;
+    font-size:22px;
+}
+
+.card p{
+    color:#cbd5e1;
+}
+
+.footer{
+    margin-top:60px;
+}
+
+.footer p{
+    margin-top:8px;
+    color:#d1d5db;
+}
+
+.dh-btn{
+    background:#22c55e;
+    color:white;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+.dh-btn:hover{
+    transform:scale(1.08);
+}
+
+@media(max-width:768px){
+    h1{
+        font-size:38px;
+    }
+
+    .subtitle{
+        font-size:16px;
+    }
+}
+.icon{
+    font-size:50px;
+    margin-bottom:15px;
+}
+.hero{
+    margin-bottom:50px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.upload-box h2{
+    margin-bottom:10px;
+    font-size:30px;
+}
+
+.upload-box p{
+    color:#cbd5e1;
+}
+.progress-bar{
+    width:100%;
+    height:18px;
+    background:#334155;
+    border-radius:20px;
+    margin-top:15px;
+    overflow:hidden;
+}
+
+.progress-fill{
+    height:100%;
+    background:#22c55e;
+    border-radius:20px;
+}
+.card h2{
+    margin-top:10px;
+    font-size:32px;
+}
+
+.card{
+    min-height:220px;
+}

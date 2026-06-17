@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer Pro</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="hero">
+
+    <h1>AI Resume Analyzer Pro</h1>
+
+    <p class="subtitle">
+        Upload your resume and instantly get ATS score,
+        skill analysis, career recommendations, and improvement tips.
+    </p>
+
+</div>
+
+    
+
+      <div class="upload-box">
+
+    <h2>Upload Your Resume</h2>
+    <p>Supported format: PDF</p>
+
+    <br>
+
+    <form action="/analyze" method="POST" enctype="multipart/form-data">
+
+        <input type="file" name="resume" accept=".pdf" required>
+
+        <br><br>
+
+        <button type="submit">
+            Analyze Resume
+        </button>
+
+    </form>
+
+</div>
+
+        <div class="features">
+
+            <div class="card">
+    <div class="icon">📊</div>
+    <h3>ATS Score</h3>
+    <p>Get resume score instantly</p>
+</div>
+
+<div class="card">
+    <div class="icon">📊</div>
+
+    <h3>ATS Score</h3>
+
+    <h2>{{ ats_score }}/100</h2>
+
+
+</div>
+
+<div class="card">
+    <div class="icon">🚀</div>
+    <h3>Career Recommendation</h3>
+    <p>Best role suggestions</p>
+</div>
+
+        </div>
+
+        <div class="footer">
+
+            <p>
+                Created by <b>Alisha Mansoori</b>
+            </p>
+
+            <p>
+                Email: aqiqafatima2@gmail.com
+            </p>
+
+            <a href="https://digitalheroesco.com" target="_blank">
+                <button class="dh-btn">
+                    Built for Digital Heroes
+                </button>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
