@@ -24,13 +24,13 @@ def home():
 @app.route('/analyze', methods=['POST'])
 def analyze():
 
-   if 'resume' not in request.files:
-    return "No file uploaded"
+    if 'resume' not in request.files:
+        return "No file uploaded"
 
-file = request.files['resume']
+    file = request.files['resume']
 
-if file.filename == '':
-    return "No file selected"
+    if file.filename == '':
+        return "No file selected"
 
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
 
