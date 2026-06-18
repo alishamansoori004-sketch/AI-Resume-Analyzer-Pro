@@ -5,6 +5,7 @@ import os
 app = Flask(__name__)
 
 UPLOAD_FOLDER = 'uploads'
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 skills_list = [
@@ -23,7 +24,13 @@ def home():
 @app.route('/analyze', methods=['POST'])
 def analyze():
 
-    file = request.files['resume']
+    if 'resume' not in request.files:
+    return "No file uploaded"
+
+file = request.files['resume']
+
+if file.filename == '':
+    return "No file selected"
 
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
 
