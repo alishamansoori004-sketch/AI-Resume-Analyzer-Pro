@@ -24,7 +24,7 @@ def home():
 @app.route('/analyze', methods=['POST'])
 def analyze():
 
-    if 'resume' not in request.files:
+   if 'resume' not in request.files:
     return "No file uploaded"
 
 file = request.files['resume']
